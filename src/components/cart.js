@@ -34,8 +34,8 @@ export default function Cart() {
     async function fetchData() {
       try {
         // Fetch data from server
-        const response = await axios.get(`https://dummyjson.com/carts/user/${user.id}`);
-        console.log(response.data.carts[0]);
+        const response = await axios.get(`https://dummyjson.com/carts/user/${(user.id || localStorage.getItem('id'))}`);
+        
         // setting the cart state with the fetched data
         setCart(response.data.carts[0]);
       } catch (error) {
@@ -47,7 +47,7 @@ export default function Cart() {
     if (user) {
       fetchData();
     }
-  }, [user]);
+  },[user]);
 
   // Rendering
   return (
