@@ -1,0 +1,24 @@
+body{
+    margin:0;
+}
+
+.product-placeholder{
+    width: 100%;
+    
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width: 1000px){
+
+    .product-placeholder{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 800px){
+
+    .product-placeholder{
+        grid-template-columns: 1fr 1fr;
+    }
+}

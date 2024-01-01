@@ -1,0 +1,154 @@
+.product-page{
+    @media only screen and (max-width: 600px){
+        display: block;
+    }
+    display: flex;
+    font-family: 'inter';
+    width: 100%;
+    
+height: fit-content;
+}
+.containerImgPrice{
+    width: 600px;
+    min-width: 600px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.BuyCart{
+    border: 2px solid rgba(83, 175, 54, 0.349);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-evenly;
+}
+.BuyCart button{
+    font-size: 1.2em;
+    width: 50%;
+    height: 100%;
+    border-radius: 5px;
+    
+}
+
+.images{
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 95%;
+
+
+
+    padding: 4px;
+    height: 70vh;
+
+}
+.imageArr{
+    width: 100%;
+    display: flex;
+   justify-content: center;
+    overflow-x: scroll;
+}
+.mainImgDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    height: 70%;
+    object-fit:cover;
+    object-position: center;
+    overflow:hidden;
+}
+#thumbnail{
+    height: 100%;
+
+    object-fit: fill;
+    
+    
+}
+.imageArr img{
+    
+    width: 100px;
+    margin: 3px;
+
+    &:hover{
+        outline: 1px solid yellow;
+    }
+}
+
+.text-info{
+    margin: 20px;
+    width: 100%;
+
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.651);
+    margin: 10px;
+    padding: 5px;
+}
+.name h2{
+    margin: 0;
+    font-size: 1.7em;
+}
+.rating{
+    border-radius: 5px;
+    padding: 8px;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.rating h3{
+    margin: 0;
+}
+.rating img{
+    margin-left:  8px;
+    margin-bottom: 3px;
+    width: 18px;
+}
+.price{
+    font-size: 1.8em;
+    font-weight: 300;
+    margin-left: 20px;
+    
+}
+.discount{
+    margin-left: 20px;
+    font-size: 14px;
+    color: rgb(40, 173, 40);
+
+}
+.brand{
+    margin-left: 20px;
+    font-weight: 300;
+}
+.description{
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: 200;
+}
+.high-rating {
+    background-color: green;
+    color: white;
+}
+.medium-rating {
+    background-color: orange;
+    color: white;
+}
+  
+.low-rating {
+    background-color: red;
+    color: white;
+}
+  

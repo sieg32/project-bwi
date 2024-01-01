@@ -1,0 +1,122 @@
+.nav-bar{
+    width: 100vw;
+   
+   
+    
+    background-color: rgba(107, 107, 236, 0.836);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: inter;
+    color:white;
+    text-shadow: 0 0 5px black;
+}
+ 
+.nav-bar h2{
+    margin: 5px 20px;
+
+}
+.nav-bar #search-div{
+    height: 60%;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+#search{
+    color: white;
+    background-color: rgba(182, 182, 247, 0.836) ;
+    height: 100%;
+    border-radius: 10px;
+   padding-left: 50px;
+    font-size: 18px;
+    width: 40vw;
+    border: none;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.541);
+    &:active{
+        background-color: black;
+       
+
+    }
+    &:focus{
+        border: none;
+        outline:none ;
+        box-shadow: 0 0 5px rgb(20, 68, 224) ;
+    }
+    &::placeholder{
+        color: white;
+    }
+    &:hover{
+        background-color: rgba(190, 190, 243, 0.836);
+    }
+}
+.nav-bar div img{
+    filter: invert();
+    position: relative;
+    width: 30px;
+    left: 40px;
+}
+
+.nav-bar #user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+
+    margin-right: 20px;
+    height: 70px;
+    
+    border-radius:20px;
+
+    &:hover{
+        cursor: pointer;
+    }
+    
+}
+ #user-img{
+    width: 50px;
+    left: 0;
+    position: relative;
+    filter: invert();
+}
+
+.card{
+    display:flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 15px;
+    background-color: rgba(190, 190, 243, 0.836);
+    border-radius: 25px;
+   
+    position: absolute;
+    height: fit-content;
+    right: 20px;
+    top: 12vh;
+}
+.card div{
+    position: relative;
+    display: flex;
+    width: 90%;
+    padding: 10px;
+    height: fit-content;
+    border-radius: 15px;
+    
+    &:hover{
+        background-color: rgba(190, 190, 212, 0.836);
+        cursor: pointer;    
+    }
+   
+}
+.card div img{
+    position: relative;
+    
+    left: 0;
+    width: 50px; 
+    margin: 0 5px;
+}
+.card div h2{
+   
+margin: 10px;
+    
+}
+
